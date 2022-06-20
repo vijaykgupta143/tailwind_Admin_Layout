@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-slate-200">
+    <!-- navbar start -->
+    <nav class="flex justify-between px-5 py-5 bg-white drop-shadow-md">
+        <div>
+            <button id="toggle-sidebar"><i class="fas fa-bars mr-5"></i></button>
+            <a href="/">Logo</a>
+        </div>
+        <ul class="flex gap-5">
+
+            <li class="relative group">
+                <button><i class="fa-regular fa-circle-question"></i></button>
+                <div class="group-hover:block absolute right-0 hidden w-56">
+                    <ul class="mt-6 bg-white p-5 divide-y divide-dashed flex flex-col">
+                        <li class="mb-5 text-center">
+                            <h4>Help</h4>
+                        </li>
+                        <li class="py-2">
+                            <a class="flex items-center gap-5" href="">
+                                <i class="fa-regular fa-address-card"></i>
+                                <h5>Verify Account</h5>
+                            </a>
+                        </li>
+                        <li class="py-2">
+                            <a class="flex items-center gap-5" href="">
+                                <i class="fa-regular fa-address-card"></i>
+                                <h5>Change your name</h5>
+                            </a>
+                        </li>
+                        <li class="py-2">
+                            <a class="flex items-center gap-5" href="">
+                                <i class="fa-regular fa-address-card"></i>
+                                <h5>Contact us</h5>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </li>
+
+            <li class="relative group">
+                <button><i class="fa-regular fa-envelope"></i></button>
+                <div class="group-hover:block absolute right-0 hidden w-56">
+                    <ul class="mt-6 bg-white p-5 divide-y divide-dashed flex flex-col">
+                        <li class="mb-5 text-center">
+                            <h4>Message</h4>
+                        </li>
+                        <li class="py-2">
+                            <a class="flex items-center gap-5" href="">
+                                <i class="fa-regular fa-address-card"></i>
+                                <h5>Message</h5>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </li>
+
+            <li class="relative group">
+                <button><i class="fa-regular fa-circle-user"></i></button>
+                <div class="group-hover:block absolute right-0 hidden w-auto">
+                    <ul class="mt-6 bg-white p-5 divide-y divide-dashed flex flex-col">
+                        <li class="mb-5 text-center">
+                            <h4>Profile</h4>
+                        </li>
+                        <li class="flex items-center py-2 gap-5">
+                            <div
+                                class="avtar flex items-center justify-center w-10 h-10 rounded-full border border-blue-400 overflow-hidden">
+                                <i class="fa-regular fa-circle-user"></i>
+                            </div>
+                            <div class="user">
+                                <h5>Vijay kumar</h5>
+                                <h5>Vijaykgupta143#gmail.com</h5>
+                            </div>
+                        </li>
+                        <li class="py-2">
+                            <a class="flex items-center gap-5" href="">
+                                <i class="fa-regular fa-address-card"></i>
+                                <h5>Profile</h5>
+                            </a>
+                        </li>
+                        <li class="py-2">
+                            <a class="flex items-center gap-5" href="">
+                                <i class="fa-regular fa-share-from-square"></i>
+                                <h5>Log-Out</h5>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <!-- Navbar end -->
+
+    <div class="flex">
+
+        <!-- Sidebar start -->
+        <div class="sidebar open w-full bg-white py-5">
+            <ul>
+                <li class="dropdown px-5 py-2">
+                    <a class="flex items-center w-max" href="javascript:void;">
+                        <i class="fas fa-gauge mr-5 relative group">
+                            <div class="group-hover:block absolute w-max left-11 top-0 hidden p-2 bg-slate-100">
+                                <span>Dashboard</span>
+                            </div>
+                        </i>
+                        <h5>Dashboard</h5>
+                    </a>
+
+                    <ul class="dropdown-items h-full">
+                        <li class="px-5 py-2">
+                            <a class="flex items-center w-max" href="">
+                                <i class="fas fa-gauge mr-5 relative group">
+                                    <div class="group-hover:block absolute w-max left-11 top-0 hidden p-2 bg-slate-100">
+                                        <span>Dashboard one</span>
+                                    </div>
+                                </i>
+                                <h5>Dashboard one</h5>
+                            </a>
+                        </li>
+                        <li class="px-5 py-2">
+                            <a class="flex items-center w-max" href="">
+                                <i class="fas fa-gauge mr-5 relative group">
+                                    <div class="group-hover:block absolute w-max left-11 top-0 hidden p-2 bg-slate-100">
+                                        <span>Dashboard one</span>
+                                    </div>
+                                </i>
+                                <h5>Dashboard Two</h5>
+                            </a>
+                        </li>
+                       
+                    </ul>
+                </li>
+
+
+                <li class="px-5 py-2">
+                    <a class="flex items-center w-max" href="">
+                        <i class="fa fa-store mr-5 relative group">
+                            <div class="group-hover:block absolute w-max left-11 top-0 hidden p-2 bg-slate-100">
+                                <span>Order</span>
+                            </div>
+                        </i>
+                        <h5>Order</h5>
+                    </a>
+                </li>
+                <li class="px-5 py-2">
+                    <a class="flex items-center w-max" href="">
+                        <i class="fa-solid fa-gifts mr-5 relative group">
+                            <div class="group-hover:block absolute w-max left-11 top-0 hidden p-2 bg-slate-100">
+                                <span>Products</span>
+                            </div>
+                        </i>
+                        <h5>Products</h5>
+                    </a>
+                </li>
+                <li class="px-5 py-2">
+                    <a class="flex items-center w-max" href="">
+                        <i class="fas fa-user-group mr-5 relative group">
+                            <div class="group-hover:block absolute w-max left-11 top-0 hidden p-2 bg-slate-100">
+                                <span>User</span>
+                            </div>
+                        </i>
+                        <h5>User</h5>
+                    </a>
+                </li>
+                <li class="px-5 py-2">
+                    <a class="flex items-center w-max" href="">
+                        <i class="fas fa-pen-to-square mr-5 relative group">
+                            <div class="group-hover:block absolute w-max left-11 top-0 hidden p-2 bg-slate-100">
+                                <span>post</span>
+                            </div>
+                        </i>
+                        <h5>post</h5>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+        <!-- Sidebar End -->
+
+        <!-- main Content Box Start -->
+        <main class="w-full p-5">
+            <div class="box">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est reiciendis officia vitae molestiae
+                accusantium explicabo, deleniti dignissimos exercitationem doloribus placeat voluptatem iusto tempore
+                corrupti consectetur ipsum eligendi, optio aliquam! Sequi molestias illo adipisci nulla quae fuga, odit
+                quisquam officiis? Aperiam.
+            </div>
+        </main>
+
+        <!-- main Content Box end -->
+
+    </div>
+
+
+
+    <footer class="py-5 bg-white text-center">
+        <h4 class="m-0">This is Footer</h4>
+    </footer>
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
